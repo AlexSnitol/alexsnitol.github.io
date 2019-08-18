@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DriveWaterSport.org - Спортивные суда - Сплавной катамаран</title>
+	<link rel="stylesheet" href="../css/drivewatersport.css" media="screen" type="text/css">
+	<link rel="shortcut icon" href="..\images\icon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../js/jquery.mb.YTPlayer.js"></script>
+  <script src="../assets/apikey.js"></script>
+</head>
+<body>
+<script type="text/javascript">var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="../images/arrow75.png" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Прокрутить вверх"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();</script>
+<div class=header_up></div>
+<div class=header>
+	<div class=header_logo><img alt="DriveWaterSport" title="DriveWaterSport" src=..\images\logo.png width=65></div>
+	<a href="..\index.html"><div class=header_button>Главная</div></a>
+	<a href="sports_vessel.html"><div class=header_button>Спортивные суда</div></a>
+	<a href="type_sports.html"><div class=header_button>Водные виды спорта</div></a>
+</div>
+<div class=content>
+	<div class=box><img id="myImg" alt="Сплавной катамаран" title="Сплавной катамаран" style="width: 50%" src=../images/sportcat.jpg></div>
+</div>
+<div id="myModal" class="modal">
+	<span class="close">&times;</span>
+	<img class="modal-content" id="img01">
+	<div id="caption"></div>
+  </div>
+<script>
+	// Get the modal
+	var modal = document.getElementById('myModal');
+	
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById('myImg');
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+	img.onclick = function(){
+	  modal.style.display = "block";
+	  modalImg.src = this.src;
+	  captionText.innerHTML = this.alt;
+	}
+	
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+	
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+	  modal.style.display = "none";
+	}
+	</script>
+<div class=content>
+	<div class=box><h1>Сплавной катамаран</h1>
+	<p>Сплавной катамаран — небольшое, разборное судно, используемое в водном туризме, состоящее из двух, как правило, надувных корпусов — гондол, соединённых каркасом (рамой), как правило, изготовленным из дерева или металла (преимущественно дюралюминий). Наиболее распространены двух- и четырёхместные катамараны. Реже встречаются шести- и восьмиместные версии. Основное назначение сплавного катамарана — сплав по бурным, порожистым рекам.</p>
+	<p>Гребцы обычно располагаются на специальных сиденьях — пирамидках на гондолах поровну с обоих бортов. Поза гребцов — коленная посадка лицом вперёд. Реже встречаются конструкции в которых места для гребцов устроены в раме катамарана между гондолами. Существуют так же другие формы посадок. Сплавные катамараны мало распространены в мире. Исключение — Россия и бывшие союзные республики.</p>
+	</div>
+</div>
+<div id="p1" class="player" style="z-index:'-1'" data-property="{videoURL:'FYl-9jUQmFE', ratio:16/9, abundance:.3, anchor:'center,center', startAt:45, containment:'body', showControls:false, autoPlay:true, loop:true, mute:true, opacity:1, addRaster:true, quality:'default', addFilters:{grayscale: 50, sepia: 50, contrast: 97, saturate: 354, brightness: 60, contrast: 100, blur: 10}}"></div>
+	<script>
+	  jQuery(".player").YTPlayer({useOnMobile:true, mobileFallbackImage:"images/mask-3.png"});
+	</script>
+	<img class="shadow" src=..\images\shadow.png>
+</body>
+</html>
