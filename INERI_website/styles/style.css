@@ -21,22 +21,25 @@ body {
     z-index: 1000;
 }
 
+@font-face{font-family:accuratist;src:url(../font/accuratist.ttf)}
 .logo {
     position: absolute;
-    width: 200px;
+    width: fit-content;
     height: 50px;
     line-height: 50px;
     white-space: nowrap;
     left: 8.3%;
     top: 8px;
 
-    background: #133264;
-    border-radius: 120px;
+    padding: 0px 15px 0px 15px;
 
-    font-family: "Raleway", sans-serif;
+    background: #133264;
+    border-radius: 8px;
+
+    font-family: "accuratist", sans-serif;
     font-style: normal;
-    font-weight: 800;
-    font-size: 26px;
+    font-weight: 500;
+    font-size: 36px;
     color: #F4F4F4;
 
     display: inline-block;
@@ -85,6 +88,7 @@ body {
 }
 
 .only-icon {
+    display: none;
     padding: 0px 8.5px 0px 8.5px;
 }
 
@@ -351,16 +355,56 @@ ol li::before {
     text-align: center;
 }
 
+.container-graph {
+    position: relative;
+    display: inline-block;
+
+    top: 26%;
+    width: 700px;
+
+    padding: 10px 30px 10px 30px;
+}
+
 .graph {
     display: inline-block;
     position: relative;
     height: 350px;
-    width: 700px;
+    width: 100%;
 
     padding: 20px;
 
     background: linear-gradient(180deg, #081C3B 0%, #06162E 100%);
     border-radius: 15px;
+}
+
+.graph-title {
+    display: inline-block;
+    width: 100%;
+
+    text-align: center;
+    vertical-align: text-top;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.go-top {
+    content: url('../images/icon_up_bold_in_circle.svg');
+
+    filter: invert(100%) opacity(20%);
+
+    position: fixed;
+    right: 5%;
+    bottom: 8%;
+
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
+
+    z-index: 1000;
+
+    transition: 0.2s;
+    mix-blend-mode: exclusion;
 }
 
 .playerBox {
@@ -398,6 +442,113 @@ ol li::before {
 .mb_YTPBar .level{position:absolute;left:0;bottom:0;background-color:#fff;box-sizing:border-box}
 .mb_YTPBar .level.horizontal{height:100%;width:0}
 .mb_YTPBar .level.vertical{height:auto;width:100%}
+
+/* ID ELEMENTS */
+
+#button1 {
+    position: relative;
+    top: 40%;
+}
+
+#content-slide1 {
+    display: inline-block;
+    position: relative;
+    width: 70%;
+    height: 100%;
+}
+
+#heading3-1 {
+    position: relative;
+    top: 22%;
+}
+
+#ol3-1 {
+    position: relative;
+    top: 23%;
+
+    font-size: 22px;
+}
+
+#container-button3-1 {
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 1579px) {
+    #button1 {
+        top: 30%;
+    }
+}
+
+@media only screen and (max-width: 1550px) {
+    #slide4 {
+        height: 175vh;
+    }
+}
+
+@media only screen and (max-width: 1288px) {
+    .slide-main-video{
+        font-size: 64px;
+    }
+}
+
+@media only screen and (max-width: 1158px) {
+    .slide-main-video{
+        font-size: 48px;
+    }
+
+    #container-button3-1 {
+        top: 18%;
+    }
+
+    #heading3-1 {
+        position: relative;
+        top: 19%;
+    }
+
+    #ol3-1 {
+        position: relative;
+        top: 19%;
+
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+    #content-slide1 {
+        width: 95%;
+    }
+    .logo{
+        left: 1%;
+    }
+    .menu {
+        right: 1%;
+    }
+}
+
+@media only screen and (max-width: 835px) {
+    .menu-item {
+        display: none;
+    }
+
+    .only-icon {
+        display: inline-block;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .container-graph {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
 
 /* ICONS */
 
