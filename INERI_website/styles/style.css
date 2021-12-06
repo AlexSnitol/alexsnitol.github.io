@@ -30,6 +30,30 @@ a:hover {
     color: #129DFF;
 }
 
+input {
+    font-size: 18px;
+    font-width: 700;
+    color: #375660;
+
+    border-radius: 15px;
+
+    background-color: #F4F4F4;
+
+    padding: 10px;
+}
+
+select {
+    font-size: 18px;
+    font-width: 700;
+    color: #375660;
+
+    border-radius: 15px;
+
+    background-color: #F4F4F4;
+
+    padding: 10px;
+}
+
 .header {
     position: fixed;
     width: 100%;
@@ -674,6 +698,110 @@ a:hover {
     margin-top: 0;
 }
 
+.form {
+    display: none;
+
+    position: fixed;
+
+    height: 100%;
+    width: 100%;
+
+    line-height: 130vh;
+
+    z-index: 1001;
+
+    text-align: center;
+    vertical-align: middle;
+
+    backdrop-filter: blur(20px);
+    transition: 0.5s;
+}
+
+.form-content {
+    position: relative;
+    display: inline-block;
+
+    height: fit-content;
+    line-height: normal;
+
+    padding: 30px;
+
+    border-radius: 26.5px;
+
+    font-size: 24px;
+
+    color: #F4F4F4;
+    background-color: rgba(19, 50, 100, 0.85);
+
+    border-color: #133264;
+    border-style: solid;
+    border-width: 2px;
+
+    transition: 0.1s;
+}
+
+.form-content .row {
+    display: flex;
+
+    flex-direction: row;
+
+    width: 100%;
+
+    padding-bottom: 5px;
+
+    line-height: 45px;
+
+    text-align: left;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.form-content .row:last-child {
+    padding: 20px 0px 10px 0px;
+
+    flex: 100%;
+}
+
+.form-content .row-name {
+    display: flex;
+
+    flex-direction: row;
+
+    width: 100%;
+
+    margin-bottom: 25px;
+
+    line-height: 23.48px;
+
+    text-align: left;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.form-content .row-name .name {
+    flex: 1;
+
+    text-align: left;
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.form-content .row-name .icon-exit {
+    width: 24px;
+    cursor: pointer;
+}
+
+.form-content .row .label {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.form-content .row .textbox {
+    flex: 1;
+
+    display: inline-block;
+}
+
 .playerBox {
     background: #000;
     height: 800px;
@@ -812,13 +940,22 @@ a:hover {
     flex: 100%
 }
 
-#contacts-content-main-flex-left .subcontent #contact-icons {
+#contacts-content-main-flex-left .subcontent .contact-icons {
     line-height: 60px;
 }
 
 #contacts-content-main-flex-left .subcontent .icon-container {
     width: 55px;
     height: 55px;
+}
+
+#contacts-content-main-flex-left .icon-copy {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    margin-left: 15px;
+    vertical-align: text-top;
+    cursor: pointer;
 }
 
 #contacts-content-main-flex-right {
@@ -1001,6 +1138,10 @@ a:hover {
     content: url("../images/icon_send.svg");
 }
 
+.icon-send-h2 {
+    content: url("../images/icon_send_h2.svg");
+}
+
 .icon-phone {
     content: url("../images/icon_phone.svg");
 }
@@ -1035,6 +1176,18 @@ a:hover {
 
 .icon-viber-color {
     content: url("../images/icon_viber_color.svg");
+}
+
+.icon-copy {
+    content: url("../images/icon_copy.svg");
+}
+
+.icon-exit {
+    content: url("../images/icon_exit.svg");
+}
+
+.icon-mail-sending-color {
+    content: url("../images/icon_sending_mail_color.svg");
 }
 
 /* MEDIA QUERY */
