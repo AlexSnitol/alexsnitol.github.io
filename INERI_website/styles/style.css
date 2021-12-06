@@ -34,7 +34,7 @@ a:hover {
     z-index: 1000;
 }
 
-@font-face{font-family:accuratist;src:url(/font/accuratist.ttf)}
+@font-face{font-family:accuratist;src:url(./font/accuratist.ttf)}
 .logo {
     position: absolute;
     width: fit-content;
