@@ -520,7 +520,7 @@ select {
 }
 
 .go-top {
-    content: url('/images/icon_up_bold_in_circle.svg');
+    content: url('../images/icon_up_bold_in_circle.svg');
 
     filter: invert(100%) opacity(20%);
 
